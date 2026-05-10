@@ -7,11 +7,11 @@ export default function Kontakt() {
   const inView = useInView(ref, { once: true, margin: '-60px' })
 
   return (
-    <section id="kontakt" className="bg-black pt-32 px-8 pb-0" ref={ref}>
+    <section id="kontakt" className="bg-black pt-20 md:pt-32 px-5 md:px-8 pb-0" ref={ref}>
       <div className="max-w-7xl mx-auto">
 
         {/* Top — info + formulář */}
-        <div className="grid md:grid-cols-2 gap-20 items-start pb-20">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-20 items-start pb-12 md:pb-20">
           <div>
             <motion.p initial={{ opacity: 0 }} animate={inView ? { opacity: 1 } : {}}
               className="text-gold text-xs tracking-[0.3em] uppercase mb-4">

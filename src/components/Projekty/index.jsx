@@ -75,7 +75,7 @@ export default function Projekty() {
   const inView = useInView(ref, { once: true, margin: '-60px' })
 
   return (
-    <section id="projekty" className="bg-cream-dark py-32 px-8">
+    <section id="projekty" className="bg-cream-dark py-20 md:py-32 px-5 md:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-end justify-between mb-16" ref={ref}>
           <div>

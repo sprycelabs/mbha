@@ -16,9 +16,9 @@ export default function Footer() {
   return (
     <footer className="bg-black border-t border-white/10">
       {/* Top section */}
-      <div className="max-w-7xl mx-auto px-8 py-16 grid md:grid-cols-4 gap-12">
+      <div className="max-w-7xl mx-auto px-5 md:px-8 py-12 md:py-16 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
         {/* Brand */}
-        <div className="md:col-span-1">
+        <div className="col-span-2 md:col-span-1">
           <a href="#" className="font-serif text-xl font-light tracking-[0.2em] text-white uppercase block mb-4">
             MBHA <span className="text-gold">studio</span>
           </a>
@@ -80,7 +80,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-8 py-5 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div className="max-w-7xl mx-auto px-5 md:px-8 py-5 flex flex-col md:flex-row items-center justify-between gap-3">
           <p className="text-white/25 text-xs font-light tracking-wide">
             © 2026 MBHA studio s.r.o. — Všechna práva vyhrazena
           </p>

@@ -32,16 +32,16 @@ function FadeIn({ children, delay = 0 }) {
 
 export default function Filozofie() {
   return (
-    <section id="filozofie" className="bg-cream py-32 px-8">
+    <section id="filozofie" className="bg-cream py-20 md:py-32 px-5 md:px-8">
       <div className="max-w-7xl mx-auto">
 
         <FadeIn>
           <p className="text-gold text-xs tracking-[0.3em] uppercase mb-8">Filozofie</p>
         </FadeIn>
 
-        <div className="grid md:grid-cols-2 gap-16 items-start mb-24">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-start mb-16 md:mb-24">
           <FadeIn delay={0.1}>
-            <h2 className="font-serif text-5xl md:text-[3.5rem] font-light text-stone-950 leading-[1.12]">
+            <h2 className="font-serif text-4xl md:text-[3.5rem] font-light text-stone-950 leading-[1.12]">
               Architektura jako<br />
               <span className="italic text-gold">odpověď</span> na otázky,<br />
               které si sami klademe.
@@ -63,7 +63,7 @@ export default function Filozofie() {
         <div className="grid md:grid-cols-3 border-t border-stone-200">
           {hodnoty.map((h, i) => (
             <FadeIn key={h.cislo} delay={0.1 * i}>
-              <div className={`py-12
+              <div className={`py-8 md:py-12
                 ${i < 2 ? 'md:border-r border-stone-200 md:pr-12' : ''}
                 ${i > 0 ? 'md:pl-12' : ''}
                 border-b md:border-b-0
@@ -77,7 +77,7 @@ export default function Filozofie() {
         </div>
 
         <FadeIn delay={0.15}>
-          <div className="mt-16 grid grid-cols-3 gap-3 h-44">
+          <div className="mt-10 md:mt-16 grid grid-cols-3 gap-2 md:gap-3 h-28 md:h-44">
             {[
               'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=600&q=75',
               'https://images.unsplash.com/photo-1531971589569-0d9370cbe1e5?w=600&q=75',

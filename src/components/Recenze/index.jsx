@@ -39,13 +39,13 @@ export default function Recenze() {
   const inView = useInView(ref, { once: true, margin: '-60px' })
 
   return (
-    <section className="bg-cream py-32 px-8">
+    <section className="bg-cream py-20 md:py-32 px-5 md:px-8">
       <div className="max-w-7xl mx-auto" ref={ref}>
         <motion.p initial={{ opacity: 0 }} animate={inView ? { opacity: 1 } : {}}
           className="text-gold text-xs tracking-[0.3em] uppercase mb-4">
           Reference
         </motion.p>
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-16">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10 md:mb-16">
           <motion.h2 initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.1 }}
             className="font-serif text-4xl md:text-5xl font-light text-stone-950">
@@ -83,7 +83,7 @@ export default function Recenze() {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-3 border-t border-stone-200 pt-14 gap-8">
+        <div className="grid grid-cols-3 border-t border-stone-200 pt-10 md:pt-14 gap-4 md:gap-8">
           {[
             { hodnota: '12+', label: 'Dokončených projektů' },
             { hodnota: '100%', label: 'Spokojených klientů' },
@@ -100,7 +100,7 @@ export default function Recenze() {
 
         {/* CTA pod recenzemi */}
         <FadeIn delay={0.2}>
-          <div className="mt-16 border border-stone-200 p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="mt-12 md:mt-16 border border-stone-200 p-6 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <p className="font-serif text-2xl font-light text-stone-950 mb-1">Chcete být dalším spokojeným klientem?</p>
               <p className="text-stone-500 text-sm font-light">Konzultace je zdarma. Zavolejte nebo napište ještě dnes.</p>

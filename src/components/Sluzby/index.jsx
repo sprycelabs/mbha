@@ -42,9 +42,9 @@ function FadeIn({ children, delay = 0 }) {
 
 export default function Sluzby() {
   return (
-    <section id="sluzby" className="bg-black py-32 px-8">
+    <section id="sluzby" className="bg-black py-20 md:py-32 px-5 md:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-20">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 md:mb-20">
           <div>
             <FadeIn>
               <p className="text-gold text-xs tracking-[0.3em] uppercase mb-4">Služby</p>
@@ -68,7 +68,7 @@ export default function Sluzby() {
             const Icon = s.icon
             return (
               <FadeIn key={s.nazev} delay={0.08 * i}>
-                <div className="bg-black p-10 hover:bg-white/4 transition-colors duration-300 group h-full">
+                <div className="bg-black p-7 md:p-10 hover:bg-white/4 transition-colors duration-300 group h-full">
                   <div className="flex items-start justify-between mb-8">
                     <div className="w-11 h-11 border border-white/12 group-hover:border-gold/60 flex items-center justify-center transition-colors duration-300">
                       <Icon size={18} className="text-gold" strokeWidth={1.5} />
