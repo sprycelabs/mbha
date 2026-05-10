@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd /tmp)",
+      "Bash(npm create *)",
+      "Bash(awk '{print $2}')",
+      "Bash(xargs '-I{}' sh -c 'cat \"{}\" 2>/dev/null | python3 -c \" *)",
+      "Bash(xargs '-I{}' sh -c 'cat \"{}\" 2>/dev/null | node -e \" *)",
+      "Bash(node /c/Users/schon/AppData/Local/Temp/scan_transcripts.mjs)",
+      "Bash(cat /c/Users/schon/.claude/settings.json 2>/dev/null || echo \"FILE_NOT_FOUND\")",
+      "Bash(npm install *)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "mcp__Claude_in_Chrome__browser_batch",
+      "mcp__Claude_in_Chrome__navigate",
+      "mcp__Claude_in_Chrome__computer",
+      "Bash(npm run *)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ]
+  }
+}
